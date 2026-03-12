@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - Fake Personality Detector</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI", sans-serif;
+}
+
+body{
+height:100vh;
+background-image:url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* overlay */
+
+.overlay{
+background:rgba(0,0,0,0.65);
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* container */
+
+.container{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:15px;
+width:350px;
+text-align:center;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+color:white;
+}
+
+h2{
+margin-bottom:25px;
+}
+
+/* inputs */
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+/* button */
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,#ff7b00,#ff3c00);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-2px);
+}
+
+/* links */
+
+p{
+margin-top:20px;
+font-size:14px;
+}
+
+a{
+color:#ff7b00;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<form method="POST">
+
+<input type="text" name="username" placeholder="Choose Username" required>
+
+<input type="email" name="email" placeholder="Enter Email" required>
+
+<input type="password" name="password" placeholder="Create Password" required>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<p>Already have an account?  
+<a href="/login">Login</a></p>
+
+</div>
+
+</div>
+
+</body>
+</html>

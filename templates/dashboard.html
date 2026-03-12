@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - Fake Personality Detector</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+
+/* Background */
+
+body{
+height:100vh;
+background-image:url("https://images.unsplash.com/photo-1517430816045-df4b7de11d1d");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Overlay */
+
+.overlay{
+background:rgba(0,0,0,0.65);
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Container */
+
+.container{
+text-align:center;
+color:white;
+max-width:750px;
+padding:75px 70px;
+border-radius:18px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Title */
+
+h1{
+font-size:46px;
+margin-bottom:40px;
+text-shadow:0 0 15px rgba(0,255,255,0.7);
+}
+
+/* Text */
+
+p{
+font-size:19px;
+line-height:1.9;
+color:#e6e6e6;
+margin-bottom:65px;
+max-width:650px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* Buttons */
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+button{
+padding:15px 38px;
+font-size:17px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+/* Detect */
+
+.detect-btn{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+}
+
+.detect-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* History */
+
+.history-btn{
+background:linear-gradient(45deg,#00ff9d,#00994d);
+color:white;
+}
+
+.history-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Logout */
+
+.logout-btn{
+background:linear-gradient(45deg,#ff4b2b,#ff0000);
+color:white;
+}
+
+.logout-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="container">
+
+<h1>Dashboard</h1>
+
+<p>
+Welcome to the Fake Personality Detection System.  
+Use this AI-powered tool to analyze written statements and identify whether the personality traits expressed appear genuine or exaggerated.
+</p>
+
+<div class="buttons">
+
+<a href="/detect">
+<button class="detect-btn">Start Detection</button>
+</a>
+
+<a href="/history">
+<button class="history-btn">View History</button>
+</a>
+
+<a href="/logout">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
